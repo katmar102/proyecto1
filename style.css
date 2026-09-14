@@ -1,0 +1,116 @@
+
+body {
+    background-color: #1e3388 !important; 
+    color: #d8b8b8;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.contenedor-foto {
+    position: relative;
+    width: 240px;
+    height: 240px;
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2; /* Para que quede por encima del resplandor */
+}
+
+.resplandor-foto {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.8) 0%, rgba(79, 70, 229, 0.4) 60%, transparent 80%);
+    filter: blur(15px); /* Hace que la luz se vea suave y brillante */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+.texto-morado {
+    color: #818cf8; /* Tono morado claro para tu nombre */
+}
+
+/* Estilo para el botón azul "Ver proyectos" y "CV" */
+.btn-primary {
+    background-color: #4f46e5 !important;
+    border-color: #8480d0 !important;
+}
+
+/* Estilo para el botón transparente "Contactar" */
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.tarjeta-1, 
+.tarjeta-2 {
+    background-color: #0b1120; /* Fondo de la tarjeta (un poco más claro que el body) */
+    border: 1px solid rgba(255, 255, 255, 0.08); /* Borde delgado y sutil */
+    border-radius: 16px; /* Bordes redondeados modernos */
+    padding: 14px; /* Espaciado interno para que no quede pegado el texto */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Controlamos el tamaño y borde de las imágenes dentro de las tarjetas */
+.tarjeta-1 img, 
+.tarjeta-2 img {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 160px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.card-text {
+    color: #9ca3af; /* Gris claro para la descripción */
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+/* ===================================================
+   5. ETIQUETAS DE TECNOLOGÍAS (BADGES)
+   =================================================== */
+.badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+
+/* Naranja para HTML */
+.etiq-html {
+    background-color: rgba(234, 88, 12, 0.15) !important;
+    color: #f97316 !important;
+    border: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+/* Azul para CSS */
+.etiq-css {
+    background-color: rgba(37, 99, 235, 0.15) !important;
+    color: #3b82f6 !important;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* Amarillo para JS */
+.etiq-js {
+    background-color: rgba(202, 138, 4, 0.15) !important;
+    color: #eab308 !important;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+}
